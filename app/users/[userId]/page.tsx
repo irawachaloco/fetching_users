@@ -8,9 +8,6 @@ const UserPage = () => {
   const params = useParams();
   const id = params.userId;
 
-  console.log("users from user detail", users);
-  console.log("ID", id);
-
   const user = users.find((user) => user.id === Number(id));
 
   return (
