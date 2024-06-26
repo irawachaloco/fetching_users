@@ -11,7 +11,7 @@ const UserPage = () => {
   const user = users.find((user) => user.id === Number(id));
 
   return (
-    <div className="m-4">
+    <div className="rounded border p-4 m-4 bg-blue-100">
       <p className="text-2xl font-bold">{user?.name}</p>
       <p>
         <strong>Email: </strong>

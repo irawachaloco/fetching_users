@@ -25,7 +25,10 @@ const UsersPage = () => {
         <h1>Users list:</h1>
         <ul className="grid grid-cols-2 gap-4 mt-4">
           {displayedUsers.map((user) => (
-            <li className="rounded border p-2" key={user.id}>
+            <li
+              className="rounded border p-2 hover:bg-blue-400 hover:text-white"
+              key={user.id}
+            >
               <Link href={`/users/${user.id}`}>
                 <p className="text-2xl font-bold">{user.name}</p>
               </Link>
