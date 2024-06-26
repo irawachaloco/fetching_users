@@ -3,22 +3,9 @@
 import React, { createContext, useContext, useState } from "react";
 import { User } from "@/app/types/user";
 
-// type User = {
-//   id: number;
-//   name: string;
-//   email: string;
-//   phone: string;
-//   website?: string;
-//   company: {};
-// };
-
 type UsersContextType = {
   users: User[];
   fetchUsers: () => Promise<void>;
-  // currentPage: number;
-  // totalPages: number;
-  // limit: number;
-  // handlePageClick: (page: number) => void;
 };
 
 const UsersContext = createContext<UsersContextType | undefined>(undefined);
